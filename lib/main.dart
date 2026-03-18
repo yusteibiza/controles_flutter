@@ -19,6 +19,7 @@ class MainApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: TemaApp.tema(),
       routes: {
+        // "/": (context) => const PageControles(),
         Rutas.principal: (context) => const PagePrincipal(),
         Rutas.controles: (context) => const PageControles(),
         Rutas.dialogos: (context) => const PageDialogos(),
