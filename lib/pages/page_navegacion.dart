@@ -1,5 +1,3 @@
-import 'package:controles/efectos/explosion_ink_well.dart';
-import 'package:controles/pages/page_controles.dart';
 import 'package:flutter/material.dart';
 
 class PageNavegacion extends StatelessWidget {

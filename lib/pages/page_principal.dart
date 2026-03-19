@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:controles/efectos/explosion_ink_well.dart';
 import 'package:controles/pages/page_controles.dart';
+import 'package:controles/pages/page_listas.dart';
 import 'package:flutter/material.dart';
 
 class PagePrincipal extends StatelessWidget {
@@ -116,6 +117,24 @@ class PagePrincipal extends StatelessWidget {
                           // devuelve un Widget en este caso la página de controles
                           MaterialPageRoute(
                             builder: (context) => const PageControles(),
+                          ),
+                        );
+                      },
+                    ),
+                    ListTile(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadiusGeometry.circular(50),
+                      ),
+                      title: Text("Listas"),
+                      leading: Icon(Icons.list),
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          // Llamar a Navigator mediante una clase de enrutado
+                          // Requiere como argumento un BuildContext que es el contexto y
+                          // devuelve un Widget en este caso la página de controles
+                          MaterialPageRoute(
+                            builder: (context) => const PageListas(),
                           ),
                         );
                       },
